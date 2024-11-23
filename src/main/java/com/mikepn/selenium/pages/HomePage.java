@@ -13,7 +13,7 @@ public class HomePage extends BasePage {
 
 
     private By formsCard = By.xpath("//div[@id='app']//h5[text()='Forms']");
-    private By elementsCard = By.xpath("//div[@id='app']//h5[text()='Element']");
+    private By elementsCard = By.xpath("//div[@id='app']//h5[text()='Elements']");
     private By widgetCard = By.xpath("//div[@id='app']//h5[text()='Widgets']");
     private By alertFrames = By.xpath("//div[@id='app']//h5[contains(text(), 'Frames')]");
 

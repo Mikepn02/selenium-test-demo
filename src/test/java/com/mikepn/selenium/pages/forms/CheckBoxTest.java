@@ -1,4 +1,4 @@
-package com.mikepn.selenium.forms;
+package com.mikepn.selenium.pages.forms;
 
 import com.mikepn.selenium.base.BaseTest;
 import org.testng.annotations.Test;
