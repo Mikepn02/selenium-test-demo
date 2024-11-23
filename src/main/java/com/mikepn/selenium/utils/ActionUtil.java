@@ -1,2 +1,22 @@
-package com.mikepn.selenium.utils;public class ActionUtil {
+package com.mikepn.selenium.utils;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+
+public class ActionUtil extends Util{
+    private static Actions action;
+
+
+    private static Actions act(){
+        return new Actions(driver);
+    }
+
+    private static void dragAndDropBy(WebElement source, int x, int y){
+        action.dragAndDropBy(source, x, y).perform();
+    }
+
+    public static void sendKeys(WebElement source, CharSequence keys){
+        act().sendKeys(source, keys).perform();
+    }
 }
