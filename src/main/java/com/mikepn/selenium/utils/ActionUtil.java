@@ -12,8 +12,8 @@ public class ActionUtil extends Util{
         return new Actions(driver);
     }
 
-    private static void dragAndDropBy(WebElement source, int x, int y){
-        action.dragAndDropBy(source, x, y).perform();
+    public static void dragAndDropBy(WebElement source, int x, int y){
+        act().dragAndDropBy(source, x, y).perform();
     }
 
     public static void sendKeys(WebElement source, CharSequence keys){
